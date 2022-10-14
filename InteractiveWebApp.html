@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/InteractiveWebApp.js" defer></script>
-    <link rel="stylesheet" href="/InteractiveWebApp.css">
-    <title>Timothy's Interactive Web App</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/InteractiveWebApp.js" defer></script>
+  <link rel="stylesheet" href="/InteractiveWebApp.css">
+  <title>Timothy's Interactive Web App</title>
 </head>
+
 <body>
-<!--HamBurger Icon-->
-<div class="bars" id="nav-action">
+
+
+  <!--HamBurger Icon-->
+  <div class="bars" id="nav-action">
     <span class="bar"> </span>
   </div>
-  
+
   <!--Navbar Links-->
   <nav id="nav">
     <ul>
@@ -25,101 +29,87 @@
       </li>
     </ul>
   </nav>
-  
+
   <!--Main Body Content-->
   <article class="container">
     <h1>Welcome<br> to my<br> <br> interactive <br> web app</h1>
     <p> </p>
     <a href="https://github.com/Vog2k" target="_blank">Check out more on github</a>
   </article>
-<!--Js section for the navbar opening and closing-->
+  <!--Js section for the navbar opening and closing-->
   <script>// Setting up the Variables
     var bars = document.getElementById("nav-action");
     var nav = document.getElementById("nav");
-    
-    
+
+
     //setting up the listener
     bars.addEventListener("click", barClicked, false);
-    
-    
+
+
     //setting up the clicked Effect
     function barClicked() {
       bars.classList.toggle('active');
       nav.classList.toggle('visible');
     }</script>
 
-<!--This section will have the calculator incase i cant design myb own game/app -->
-<div class="Mid-section">
-<h1 class="calculator-text">calculator</h1>
-</div>
+  <!--This section will have the calculator incase i cant design my own game/app -->
+  <div class="Middle">
+    <h1 class="Calculator-Text">calculator</h1>
+  </div>
 
-<div class="calculator-grid">
-    <div class="output">
-        <div class="previous-operand">123 +</div>
-        <div class="current-operand">456</div>
-    </div>
-    <button class="span-two">AC</button>
-    <button>DEL</button>
-    <button>÷</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>*</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>+</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>-</button>
-    <button>.</button>
-    <button>0</button>
-    <button>%</button>
-    <button class="span-two">=</button>
+  <!-- Users input anfd outcome -->
+
+  <div class="Calculator-Setup">
+    <div class="Output">
+      <div class="User-Input">123 +</div>
+      <div class="Outcome">456</div>
     </div>
 
-    <!--
-    <script>// program for a simple calculator
-        let result;
-        
-        // take the operator input
-        const operator = prompt('Enter operator ( either +, -, * or / ): ');
-        
-        // take the operand input
-        const number1 = parseFloat(prompt('Enter first number: '));
-        const number2 = parseFloat(prompt('Enter second number: '));
-        
-        switch(operator) {
-            case '+':
-                 result = number1 + number2;
-                console.log(`${number1} + ${number2} = ${result}`);
-                break;
-        
-            case '-':
-                 result = number1 - number2;
-                console.log(`${number1} - ${number2} = ${result}`);
-                break;
-        
-            case '*':
-                 result = number1 * number2;
-                console.log(`${number1} * ${number2} = ${result}`);
-                break;
-        
-            case '/':
-                 result = number1 / number2;
-                console.log(`${number1} / ${number2} = ${result}`);
-                break;
-        
-            default:
-                console.log('Invalid operator');
-                break;
-        }</script>
--->
-</head>
-<body>
-</body>
-</html>
+    <!--Calculator buttons -->
 
-</body>
+
+
+    <button type="button" class="Clear-All" value="all-clear">AC</button>
+    <button type="button" class="" value="all-clear" style="color: rgb(255, 0, 0);">DEL</button>
+    <button type="button" class="operator" value="/">&divide;</button>
+
+    <button type="button" value="7">7</button>
+    <button type="button" value="8">8</button>
+    <button type="button" value="9">9</button>
+    <button type="button" class="operator" value="*">&times;</button>
+
+    <button type="button" value="4">4</button>
+    <button type="button" value="5">5</button>
+    <button type="button" value="6">6</button>
+    <button type="button" class="operator" value="-">-</button>
+
+    <button type="button" value="1">1</button>
+    <button type="button" value="2">2</button>
+    <button type="button" value="3">3</button>
+    <button type="button" class="operator" value="+">+</button>
+    <button type="button" class="operator" value="%">%</button>
+    
+    <button type="button" value="0">0</button>
+    <button type="button" class="decimal" value=".">.</button>
+    
+    <button type="button" class="equal-sign operator" value="=">=</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <!--For the Layout i took insperation from the windows calculator-->
+
+
 </html>
+</body>
