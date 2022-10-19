@@ -53,63 +53,62 @@
     }</script>
 
   <!--This section will have the calculator incase i cant design my own game/app -->
-  <div class="Middle">
-    <h1 class="Calculator-Text">calculator</h1>
-  </div>
-
-  <!-- Users input anfd outcome -->
-
-  <div class="Calculator-Setup">
-    <div class="Output">
-      <div class="User-Input">123 +</div>
-      <div class="Outcome">456</div>
-    </div>
-
-    <!--Calculator buttons -->
-
-
-
-    <button type="button" class="Clear-All" value="all-clear">AC</button>
-    <button type="button" class="" value="all-clear" style="color: rgb(255, 0, 0);">DEL</button>
-    <button type="button" class="operator" value="/">&divide;</button>
-
-    <button type="button" value="7">7</button>
-    <button type="button" value="8">8</button>
-    <button type="button" value="9">9</button>
-    <button type="button" class="operator" value="*">&times;</button>
-
-    <button type="button" value="4">4</button>
-    <button type="button" value="5">5</button>
-    <button type="button" value="6">6</button>
-    <button type="button" class="operator" value="-">-</button>
-
-    <button type="button" value="1">1</button>
-    <button type="button" value="2">2</button>
-    <button type="button" value="3">3</button>
-    <button type="button" class="operator" value="+">+</button>
-    <button type="button" class="operator" value="%">%</button>
-    
-    <button type="button" value="0">0</button>
-    <button type="button" class="decimal" value=".">.</button>
-    
-    <button type="button" class="equal-sign operator" value="=">=</button>
-
-
-
-
-
-
-
-
-
-
-
-
+  <h1 class="calc-text">JavaScript Calculator without DOM minipulation</h1>
+  <div class="container">
+  <div class="calc">
+    <!---I Tried to replicate the windows calculator by following the button layout-->
+    <input type="text" id="inputText" placeholder="0">
+  <button onclick="clr()" style="color: red;">C</button>
+  <button onclick="del()">DEL</button>
+  <button onclick="calculate('%')">%</button>
+  <button onclick="calculate('/')">/</button>  
+  <button onclick="calculate('7')">7</button>
+  <button onclick="calculate('8')">8</button>
+  <button onclick="calculate('9')">9</button>
+  <button onclick="calculate('*')">*</button>
+  <button onclick="calculate('4')">4</button>
+  <button onclick="calculate('5')">5</button>
+  <button onclick="calculate('6')">6</button>
+  <button onclick="calculate('-')">-</button>
+  <button onclick="calculate('1')">1</button>
+  <button onclick="calculate('2')">2</button>
+  <button onclick="calculate('3')">3</button>
+  <button onclick="calculate('+')">+</button>
+  <button onclick="calculate('.')">.</button>
+  <button onclick="calculate('0')">0</button>
+  <button class="equals" onclick="Result()">=</button>
 
   </div>
+</div>
 
-  <!--For the Layout i took insperation from the windows calculator-->
+<h1 class="calc-text">JavaScript Calculator with DOM minipulation</h1>
 
+<div class="container-2">
+  <div class="calc-2">
+    <!---I Tried to replicate the windows calculator by following the button layout-->
+    <button onclick="exit()">X</button><input type="text-2" id="inputText-2" placeholder="0">
+  
+  <button onclick="clr()" style="color: red;">C</button>
+  <button onclick="del()">DEL</button>
+  <button onclick="calculate('%')">%</button>
+  <button onclick="calculate('/')">/</button>  
+  <button onclick="calculate('7')">7</button>
+  <button onclick="calculate('8')">8</button>
+  <button onclick="calculate('9')">9</button>
+  <button onclick="calculate('*')">*</button>
+  <button onclick="calculate('4')">4</button>
+  <button onclick="calculate('5')">5</button>
+  <button onclick="calculate('6')">6</button>
+  <button onclick="calculate('-')">-</button>
+  <button onclick="calculate('1')">1</button>
+  <button onclick="calculate('2')">2</button>
+  <button onclick="calculate('3')">3</button>
+  <button onclick="calculate('+')">+</button>
+  <button onclick="calculate('.')">.</button>
+  <button onclick="calculate('0')">0</button>
+  <button class="equals-2" onclick="Result()">=</button>
 
+  </div>
+</div>
 </html>
 </body>

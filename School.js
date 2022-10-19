@@ -107,6 +107,64 @@ hey("Tim");
 
 //for loop is also used for getting each data in either an array or object
 
+//class
+//auth - 
+class User {
+   //You need at least a special method called a - constructor
+   //using it for insitialization to all attributes of the class
+   constructor(name, ID){
+    //attributes
+    this.name = name;
+    this.ID = ID;
+   }
+   // method - not function
+   sayHi(name){
+    console.log(`Welcome to IT5039, ${name}`)
+   }
+}
+//object is a specific item or thing insdie that class/group 
+//each object is 'different' - in programming it means each
+//item/thing repersents a copy (differnt) of the class
 
+let jackSmith = new User("Jack Smith, 00659862");
+let samSmith = new User("Sam Smith, 0077982");
 
+jackSmith.sayHi("Kevin");
 
+//calculator
+/*class Calculator {
+    constructor(num1, num2){
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+}
+*/
+//console.log()
+class Calculator {
+    add(num1, num2){
+    return num1 + num2;
+    }
+    minus(num1, num2){
+    return num1 - num2;
+    }
+    divide(num1, num2){
+    return num1 / num2;
+    }
+    multiply(num1, num2){
+    return num1 * num2;
+    }
+
+}
+export {Calculator}
+
+function addComment(message){
+    console.log(`The comment ${message} was created`);
+}
+function deleteComment(message){
+    console.log(`The comment ${message} was deleted`);
+}
+function editComment(message){
+    console.log(`The comment ${message} was edited`);
+}
+
+export{addComment, editComment, deleteComment}

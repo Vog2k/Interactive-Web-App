@@ -5,7 +5,7 @@
 
 body {
   position: relative;
-  background: url('http://thecodeplayer.com/u/m/b1.png') no-repeat center center fixed;
+  background: url(Images/ABnaii.jpg) no-repeat center center fixed;
   background-size: cover;
   min-width: 400px;
   min-height: 200px;
@@ -195,7 +195,6 @@ h1 {
   font-size: 60px;
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   text-transform: uppercase;
-
   letter-spacing: 5px;
   padding-top: 40px;
 }
@@ -244,76 +243,125 @@ article a:hover {
     font-size: 40px;
   }
 }
-
-.Middle{
-  width: 100%;
-  height: 100px;
-  padding: 10px;
-  margin-bottom: 50px;
-  margin-top: 200px;
-
-
-}
-
-.Calculator-Text {
-  justify-content: center;
-  align-items: center;
+.calc-text{
+  font-size: 60px;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  letter-spacing: 5px;
   text-align: center;
-  color: white;
-}
-
-.Calculator-Setup {
-  display: grid;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  grid-template-columns: repeat(4, 120px);
-  grid-template-rows: minmax(100px, auto) repeat(5, 70px);
+  padding-top: 40px;
 }
-
-.Calculator-Setup button {
-  cursor: pointer;
-  font-size: 30px;
-  border: 1px, solid white;
-  outline: none;
-  background-color: rbga(255, 255, 255, 0.75);
-}
-
-.Calculator-Setup button:hover {
-  background-color: white;
-}
-
-.Clear-All {
-  grid-column: span 2;
-  color: #fa0909;
-  background-color: rgba(150, 150, 150, 0.8);
-}
-
-.Equals {
-  grid-column: span 1;
-  color: #000000;
-  background-color: rgba(150, 150, 150, 0.8);
-  
-}
-
-.Output {
-  grid-column: 1 / -2;
-  background-color: rgba(255, 255, 255, 0.75);
+.container {
+  height: 100vh;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 10px;
-  width: 127%;
+  align-items: center;
+  justify-content: center;
 
 }
 
-.Output .User-Input {
-  color: rgba(0, 0, 0, 0.75);
-  font-size: 40px;
+.calc {
+  box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgb(0, 0, 0, .16);
+  border-radius: 1px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  background-color: #616161;
+
 }
 
-.Output .Outcome {
-  color: rgb(0, 0, 0);
+input {
+  grid-column: span 4;
+  height: 70px;
+  width: 360px;
+  box-shadow: inset -6px -6px 13px #fff, inset 6px 6px 13px rgb(0, 0, 0, );
   font-size: 40px;
+  padding: 20px;
+  margin: 40px 0px 30px 0px;
+  text-align: end;
+  color: #000000;
+  border: none;
+  background-color: #ecf0f3;
+
+
+
+
+}
+
+button {
+  box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgb(0, 0, 0, );
+  background-color: #ecf0f3;
+  border: none;
+  height: 50px;
+  width: 90px;
+  margin: 10px;
+  font-weight: 20px;
+  cursor: pointer;
+
+}
+button :hover{
+  box-shadow: 15px 18px 15px #000000;
+  transition: 0.9s ease-in-out;
+}
+.equals{
+  width: 190px;
+  box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgb(0, 0, 0, );
+  background-color: #919191;
+}
+
+.container-2 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.calc-2 {
+  box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgb(0, 0, 0, .16);
+  border-radius: 1px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  background-color: #616161;
+
+}
+
+input {
+  grid-column: span 4;
+  height: 70px;
+  width: 360px;
+  box-shadow: inset -6px -6px 13px #fff, inset 6px 6px 13px rgb(0, 0, 0, );
+  font-size: 40px;
+  padding: 20px;
+  margin: 40px 0px 30px 0px;
+  text-align: end;
+  color: #000000;
+  border: none;
+  background-color: #ecf0f3;
+
+
+
+
+}
+
+button {
+  box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgb(0, 0, 0, );
+  background-color: #ecf0f3;
+  border: none;
+  height: 50px;
+  width: 90px;
+  margin: 10px;
+  font-weight: 20px;
+  cursor: pointer;
+
+}
+button :hover{
+  box-shadow: 15px 18px 15px #000000;
+  transition: 0.9s ease-in-out;
+}
+.equals-2{
+  width: 190px;
+  box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgb(0, 0, 0, );
+  background-color: #919191;
 }

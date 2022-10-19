@@ -1,9 +1,29 @@
-const calculator = {
-    displayValue: '0',
-    firstOperand: null,
-    waitingForSecondOperand: false,
-    operator: null,
-  };
-  
-console.log(displayValue)
-//AC DEL ÷ 1 2 3 * 4 5 6 + 7 8 9 - . 0 %
+let result=document.getElementById("inputText");
+
+//Current line will take the given number from the user ('number) this is the users desierd number
+let calculate=(number)=>{
+    result.value+=number;
+
+}
+
+let Result=()=>{
+    try{
+        result.value=eval(result.value)
+    }
+    catch(err){
+        alert("Enter A Valid Equation")
+    }
+}
+
+function clr(){
+    result.value="";
+}
+
+function del(){
+    //This line will erase th last number the user has entered. 
+    result.value=result.value.slice(0, -1);
+}
+
+//NEED TO FIND OUT HOW TO IMPEMENT % 
+//ADDED "," FROM LARGER AMOUNTS
+//
