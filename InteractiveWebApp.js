@@ -27,3 +27,29 @@ function del(){
 //NEED TO FIND OUT HOW TO IMPEMENT % 
 //ADDED "," FROM LARGER AMOUNTS
 //
+
+/*let btnClose = document.querySelector('#close');
+
+let myTab;
+
+btnClose.addEventListener('click', ()=>{
+    if(myTab) myTab.close();
+}); */
+
+let btnClose = document.querySelector('#close');
+
+let myTab;
+
+btnClose.addEventListener('click', ()=>{
+    if(myTab) myTab.close();
+}); 
+
+let myWindow;
+
+function openWin() {
+  myWindow = window.open("", "", "width=200,height=100");
+}
+
+function closeWin() {
+  myWindow.close('container');
+}
