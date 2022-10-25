@@ -1,4 +1,4 @@
-
+/*
 //let or const || "var"- Globle variable Avoid using. 
 //data types: number interger, decimal, float and string, boolean:True or false | null and undefined: object - complex data type
 let name = "jack"; //'jack' single quotation
@@ -138,7 +138,7 @@ jackSmith.sayHi("Kevin");
         this.num2 = num2;
     }
 }
-*/
+
 //console.log()
 class Calculator {
     add(num1, num2){
@@ -167,4 +167,34 @@ function editComment(message){
     console.log(`The comment ${message} was edited`);
 }
 
-export{addComment, editComment, deleteComment}
+export{addComment, editComment, deleteComment} */
+
+
+const toDoInput = document.querySelector(".to-do input");
+const toDoButton = document.querySelector(".add-item");
+const listTasks = document.querySelector(".display-item")
+const completedTasks = document.querySelector(".completed-tasks")
+
+toDoButton.addEventListener("click", addItem);
+
+function addItem(){
+    if (toDoInput.value !=="" ){
+        //!== empty value
+        // == true
+        // === false
+        const li = document.createElement("li");
+        li.innerHTML = `
+        <input type="checkbox" class="list-item">
+        ${toDoInput.value}`;   
+
+        li.classList.add(`${toDoInput.value}`);
+
+        listTasks.appendChild(li);
+        toDoInput.value = "";
+        } else{
+
+            console.log("Please type in a task")
+            alert("Please type in a task")
+        
+    }
+}

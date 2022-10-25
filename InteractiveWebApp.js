@@ -6,6 +6,7 @@ let calculate=(number)=>{
 
 }
 
+
 let Result=()=>{
     try{
         result.value=eval(result.value)
@@ -24,32 +25,7 @@ function del(){
     result.value=result.value.slice(0, -1);
 }
 
-//NEED TO FIND OUT HOW TO IMPEMENT % 
-//ADDED "," FROM LARGER AMOUNTS
-//
-
-/*let btnClose = document.querySelector('#close');
-
-let myTab;
-
-btnClose.addEventListener('click', ()=>{
-    if(myTab) myTab.close();
-}); */
-
-let btnClose = document.querySelector('#close');
-
-let myTab;
-
-btnClose.addEventListener('click', ()=>{
-    if(myTab) myTab.close();
-}); 
-
-let myWindow;
-
-function openWin() {
-  myWindow = window.open("", "", "width=200,height=100");
-}
-
-function closeWin() {
-  myWindow.close('container');
-}
+/*var menuItems = document.querySelectorAll('.menuItem');
+menuItems[0].classList.add('hidden');
+menuItems[0].classList.remove('hidden');
+*/

@@ -21,11 +21,11 @@
   <!--Navbar Links-->
   <nav id="nav">
     <ul>
-      <li class="shape-circle circle-one"><a href="#">Contact</a></li>
-      <li class="shape-circle circle-two"><a href="#">Blog</a></li>
-      <li class="shape-circle circle-three"><a href="#">About us</a></li>
-      <li class="shape-circle circle-five">
-        <a href="/InteractiveWebApp.html">Home</a>
+      <!--If the project needed to be displayed in a mobile then the nav would be perfect for this -->
+      <li class="shape-circle circle-one"><a href="InteractiveWebApp.html">Home</a></li>
+      <li class="shape-circle circle-two"><a href="#">About me</a></li>
+      <li class="shape-circle circle-three"><a href="#">Refferance</a></li>
+      <li class="shape-circle circle-five"><a href="#">Contact us</a>
       </li>
     </ul>
   </nav>
@@ -53,74 +53,136 @@
     }</script>
 
   <!--This section will have the calculator incase i cant design my own game/app -->
-  <h1 class="calc-text">JavaScript Calculator without DOM minipulation</h1>
-  
+  <h1 class="calc-text">JavaScript Calculator</h1>
+
+
+  <button onclick="toggle()" class="btnToggle">Close</button>
+
+  <div id="closeOut">
+
+  <script>
+  function toggle(){
+    //Create a variable and get the id from the div above
+      var x = document.getElementById("closeOut");
+  //if the has been pushed then close the div 
+      if (x.style.display === "none" ) {
+          x.style.display = "block";
+      }
+  //if i the button shows that its not pushed then do nothing
+      else {
+          x.style.display = "none";
+      }
+
+    
+  }</script>
+
   <div class="container">
-   
+
   <div class="calc"> 
-
-<button onclick="closeWin()">Close</button>
-
-
-    <!---I Tried to replicate the windows calculator by following the button layout-->
-    <input type="text" id="inputText" placeholder="0">
+<!--Learn how to close the applicatino once use has finished-->
+ 
+  <!---I Tried to replicate the windows calculator by following the button layout-->
+  <input type="text" id="inputText" placeholder="0">
+  <!--Created a function to clear all-->
   <button onclick="clr()" style="color: red;">C</button>
+  <!--Created a function to delete one sinbgle didget-->
   <button onclick="del()">DEL</button>
+  <!--I spent a fair amount of time researching modulo only to find out 
+    there was no need to write code for modulo, javascript allready have modulo.-->
   <button onclick="calculate('%')">%</button>
-  <button onclick="calculate('/')">/</button>  
+  <button onclick="calculate('/')">/</button>
+
   <button onclick="calculate('7')">7</button>
   <button onclick="calculate('8')">8</button>
   <button onclick="calculate('9')">9</button>
   <button onclick="calculate('*')">*</button>
+
   <button onclick="calculate('4')">4</button>
   <button onclick="calculate('5')">5</button>
   <button onclick="calculate('6')">6</button>
   <button onclick="calculate('-')">-</button>
+
   <button onclick="calculate('1')">1</button>
   <button onclick="calculate('2')">2</button>
   <button onclick="calculate('3')">3</button>
+
   <button onclick="calculate('+')">+</button>
   <button onclick="calculate('.')">.</button>
   <button onclick="calculate('0')">0</button>
+  <!--coded for when the user enters in a invalid equation pop menu will show-->
   <button class="equals" onclick="Result()">=</button>
-
+    </div>
   </div>
 </div>
+<!----Hidden h2 under the calculator app, im not to sure how to fully hide or implement this feature yet.-->
+<h2 class="under">Thank you for <br> using the application !</h2>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-<!--
-<h1 class="calc-text">JavaScript Calculator with DOM minipulation</h1>
+<h3>Refferance on <a href="https://www.gamedeveloper.com/design/6-game-ui-you-should-study" style="text-decoration: none; color: white;">UI gamers and UX</a> </h3>
+<p class="Fill-in-text">Reffering to this link above the user loves to see happy colours and bold edges. 
+  Navigation is made easy and simple, buttons and windows have plenty of room for text 
+  that is often bold and easy to see. <br>
+  
+<br>
 
-<div class="container-2">
-  <div class="calc-2">
-    ---I Tried to replicate the windows calculator by following the button layout
-    
-    <button id="close">Close</button>
-    <button type="button" class="close" data-dismiss="alert" >&times</button>
-        
-        <input type="text-2" id="inputText-2" placeholder="0">
-      
-      <button onclick="clr()" style="color: red;">C</button>
-      <button onclick="del()">DEL</button>
-      <button onclick="calculate('%')">%</button>
-      <button onclick="calculate('/')">/</button>  
-      <button onclick="calculate('7')">7</button>
-      <button onclick="calculate('8')">8</button>
-      <button onclick="calculate('9')">9</button>
-      <button onclick="calculate('*')">*</button>
-      <button onclick="calculate('4')">4</button>
-      <button onclick="calculate('5')">5</button>
-      <button onclick="calculate('6')">6</button>
-      <button onclick="calculate('-')">-</button>
-      <button onclick="calculate('1')">1</button>
-      <button onclick="calculate('2')">2</button>
-      <button onclick="calculate('3')">3</button>
-      <button onclick="calculate('+')">+</button>
-      <button onclick="calculate('.')">.</button>
-      <button onclick="calculate('0')">0</button>
-      <button class="equals-2" onclick="Result()">=</button>
+  Looking at some other projects from people on google i have studied, I have decided to go 
+  with the standerd layout on the windows software  calculator 
+  i thought the process of the syntax would be similar to python in my experiance it was not 
+  , finding out how to create functions and use the right semicolns was hard but i am finding 
+  it much easier to learn now. <br>
 
+</p>
+
+  <br>
+  <div class="Test">
+  <h4>Test Case </h4>
+    <br>
+    <p>Description:Open hamburger menu anywhere down the page<br>
+    Output:Could only open top of the screen<br>
+    Result:Failed<br>
+  </p>
+
+  <p>
+  Description:Open hamburger menu anywhere down the page
+  <br>
+  Output:Could only open top of the screen
+  <br>
+  Result:Failed
+  <br>
+  </p>
+</div>
+ 
+<section>
+  <h1>task-planner</h1>
+  <div class="to-do">
+    <input type="text">
+    <button class="add-task">Add</button>
+  </div>
+
+  <ul class="display-item">
+    <h2>to-do today</h2>
+  </ul>
+
+  <ul class="completed-tasks">
+    <h2>Completed tasks</h2>
+  </ul>
+</section>
+
+<footer>
+  <ul class="icons">
+
+      <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+  </ul>
+  <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Refferances</a></li>
+          <li><a href="#">Contact Me</a></li>
+  </ul>
+      <div class="footer-copyright">
+          <p>Copyright @ 2022 All Rights Reserved.</p>
       </div>
-    </div>
-  -->
 </html>
 </body>
