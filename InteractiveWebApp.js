@@ -6,7 +6,7 @@ let calculate=(number)=>{
 
 }
 
-
+//Oringnally i used var and const but had no luck
 let Result=()=>{
     try{
         result.value=eval(result.value)

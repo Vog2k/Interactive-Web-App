@@ -109,7 +109,7 @@ ul {
 }
 
 .shape-circle {
-  border-radius: 50%;
+  border-radius: 80%;
   width: 20vw;
   height: 20vw;
   top: -10vw;
@@ -119,7 +119,7 @@ ul {
   background: #ff7171;
   box-shadow: 0 0px 0px rgba(4, 26, 62, 0.5);
 }
-
+/*hidden nav*/
 nav.visible li:first-child {
   width: 200vw;
   height: 200vw;
@@ -159,7 +159,7 @@ nav.visible li:last-child {
   transition: all .8s ease-in-out;
   box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
 }
-
+/*On click*/
 nav.visible li:first-child a {
   line-height: 265vw !important;
   text-indent: 15vw !important;
@@ -283,7 +283,7 @@ input {
   grid-column: span 4;
   height: 70px;
   width: 360px;
-  box-shadow: inset -6px -6px 13px #fff, inset 6px 6px 13px rgb(0, 0, 0, );
+  box-shadow: inset 0px 2px 3px 0px black;
   font-size: 40px;
   padding: 20px;
   margin: 40px 0px 30px 0px;
@@ -299,6 +299,7 @@ input {
 
 button {
   box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgb(0, 0, 0, );
+  box-shadow: inset 0px 2px 3px 0px black;
   background-color: #ecf0f3;
   border: none;
   height: 50px;
@@ -309,12 +310,22 @@ button {
 
 }
 
-button :hover {
-  box-shadow: 15px 18px 15px #000000;
-  transition: 0.9s ease-in-out;
+button:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.8s;
+    box-shadow:  5px 5px 9px 2px #ff7171;
+    transform: scale(1.02);
+  
 }
 
 .btnToggle {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ff7171;
+  left: -220px;
+}
+.btnToggle button{
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -334,7 +345,7 @@ input {
   grid-column: span 4;
   height: 70px;
   width: 360px;
-  box-shadow: inset -6px -6px 13px #fff, inset 6px 6px 13px rgb(0, 0, 0, );
+  box-shadow: inset -6px -6px 13px rgb(8, 8, 8), inset 6px 6px 13px rgb(0, 0, 0, );
   font-size: 40px;
   padding: 20px;
   margin: 40px 0px 30px 0px;
@@ -383,7 +394,7 @@ h4 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 12%;
+  height: 10%;
   margin: 50px 120px;
 }
 
@@ -394,6 +405,16 @@ h4 {
 .paragraph-test-line-2{
   margin: 5px 10%;
   width: 40%;
+}
+.break-in-between{
+  width: 100%;
+  margin-top: 180px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 8%;
+
 }
 
 footer {
