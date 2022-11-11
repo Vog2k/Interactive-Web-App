@@ -29,3 +29,40 @@ function del(){
 menuItems[0].classList.add('hidden');
 menuItems[0].classList.remove('hidden');
 */
+function showTime(){
+    var date = new Date();
+    //Hour
+    var h = date.getHours(); // 0 - 23
+    //Minute
+    var m = date.getMinutes(); // 0 - 59
+    //Second
+    var s = date.getSeconds(); // 0 - 59
+
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    // To see if it is 12 in the morning or 12 at night 
+    //Boolean is chosen
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    //Steven just taught us this information above when using the ? sign
+    var time = h + ":" + m + ":" + s + " " + session;
+    //Will display for example 05:02:20
+
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    //This determines how fact you want the time to skip , every two seconds would be 2000
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();
