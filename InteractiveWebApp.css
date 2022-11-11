@@ -434,17 +434,20 @@ h4 {
   position: relative;
 }
 
-
+.block{
+  margin: 20px 20px;
+}
 .Fill-in-text{
   font-size: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 10%;
-  margin: 50px 0px;
+  height: 5%;
   text-decoration: none;
-  height: 50%;
-
+  width: 100%;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  position: relative;
 }
 
 @media screen and (max-width: 969px){
@@ -454,8 +457,8 @@ h4 {
     align-items: center;
     text-align: center;
     height: 10%;
-    width: auto;
-    margin: 50px 0px;
+
+    margin: 0px;
     text-decoration: none;
   }
 }
@@ -467,21 +470,21 @@ h4 {
     align-items: center;
     text-align: center;
     height: 50%;
-    width: 90%;
-    margin: 50px 0px;
+
+    margin: 0px;
     text-decoration: none;
   }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 744px){
   .Fill-in-text {
     font-size: 15px;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 50%;
-    width: 90%;
-    margin: 50px 0px;
+
+    margin: 0px;
     text-decoration: none;
   }
 }
